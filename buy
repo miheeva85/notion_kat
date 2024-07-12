@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кнопка Купить шаблон</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #EFE7DA; /* Фоновый цвет страницы */
+    }
+    .glass-button {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #B3907A; /* Основной цвет кнопки */
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тень для эффекта стекла */
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .glass-button:hover {
+        background-color: #6B6C70; /* Цвет кнопки при наведении */
+        transform: translateY(-2px); /* Эффект поднятия при наведении */
+    }
+</style>
+</head>
+<body>
+    <a href="https://t.me/k12rina" class="glass-button">Купить шаблон</a>
+</body>
+</html>
