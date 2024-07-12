@@ -1,59 +1,38 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: "Roboto", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        .glass-button {
-            background: rgba(255, 255, 255, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            color: #5a3d2b;
-            /* Коричневый текст */
-            font-size: 18px;
-            padding: 15px 30px;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            transition: background 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .glass-button:hover {
-            background: rgba(255, 255, 255, 0.3);
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Кнопка Купить шаблон</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #EFE7DA; /* Фоновый цвет страницы */
+    }
+    .glass-button {
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #B3907A; /* Основной цвет кнопки */
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тень для эффекта стекла */
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .glass-button:hover {
+        background-color: #6B6C70; /* Цвет кнопки при наведении */
+        transform: translateY(-2px); /* Эффект поднятия при наведении */
+    }
+</style>
 </head>
-
 <body>
-<button class="glass-button" type="button" onclick="navigate()"> <i class="fa-regular fa-star"></i>Купить шаблон</button>
+    <a href="https://t.me/k12rina" class="glass-button">Купить шаблон</a>
 </body>
-
-
-<script>
-  function navigate() {
-    window.open("https://t.me/k12rina", '_blank').focus();
-  }
-</script>
-
 </html>
